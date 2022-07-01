@@ -51,9 +51,23 @@ For now, I'll try to read on as much as possible on how I can store user input o
 I'm still not sure how to let users their input be shown to other users, so figuring that out is a top priority.
 
 ## When in doubt, write it out!
-The way I see this happening is:
-1. User inputs their information in the form
-2. User sends form data
-3. This form data needs to be transformed into an array/object
-4. User data goes through thr Post class, creating an object called userData
-5. PostLoader class will handle the getting, storing and posting of data
+
+Post Class
+-> Has the following:
+* Properties:
+  * Title, Content, Authorname, and Date
+    * These are all strings
+
+So when the user gives us their information for the post, in the $_POST, it will be an array.
+I need to turn this array into an object, made out of strings.
+That's where the Post Class comes in.
+It needs to grab the $_POST array, turn it into an object, so something like this:
+
+`$userInput = new Post($_POST["title"], $_POST["content"], $_POST["authorName"], $_POST["date"],)`
+
+The class creates this object.
+Then, the PostLoader stores this object, and is able to retrieve it again.
+
+So my current goal is, is for when I print_r($userInput), the object needs to appear.
+
+![some-text](images/patrick.gif);
