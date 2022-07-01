@@ -16,7 +16,7 @@ declare(strict_types=1);
 
     <label>
         Name:
-        <input type="text" name="authorname">
+        <input type="text" name="authorName">
     </label><br>
     <button type="submit" value="<?php echo (date('m/d/Y')); ?>" name="date">Submit</button>
 </form>
