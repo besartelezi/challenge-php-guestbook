@@ -3,10 +3,21 @@ declare(strict_types=1);
 ?>
 
 <body>
-<form action ="bodyView.php" method="post">
-    Title of your post: <input type="text" name="title"><br>
-    What would you like to post on this website?: <input type="text" name="content"><br>
-    Name: <input type="text" name="content"><br>
-    <input type="submit">
+<form action ="index.php" method="post">
+    <label>
+        Title of your post:
+        <input type="text" name="title">
+    </label><br>
+
+    <label>
+        What would you like to post on this website?:
+        <input type="text" name="content">
+    </label><br>
+
+    <label>
+        Name:
+        <input type="text" name="authorname">
+    </label><br>
+    <button type="submit" value="<?php echo (date('m/d/Y')); ?>" name="date">Submit</button>
 </form>
 </body>
