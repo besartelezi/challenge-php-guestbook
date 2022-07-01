@@ -15,4 +15,10 @@ class Post
         $this->content = $content;
         $this->authorName = $authorName;
     }
+
 }
+
+// if (isset($_POST))
+// {
+//    $userPost = new Post();
+// }
