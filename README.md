@@ -19,8 +19,12 @@ Everybody who visits the page can see the messages.
 
 ## Nice to have features
 - [ ] Profanity filter: at the top of your script create an array of "bad" words. If somebody tries to enter a message with those words, their messages gets rejected.
-- [ ] When the user enters uses a "smily" like ":-)", ";-)", ":-(" replace it with an image of such a smiley.
+- [ ] When the user enters uses a "smiley" like ":-)", ";-)", ":-(" replace it with an image of such a smiley.
 - [ ] Have an input field where the user can enter how many message he wants to see displayed.
+
+## Features of my own I'd like to add
+- [ ] Play an audio file of the viral clip 'watch yo profanity' when the user inputs a "bad" word.
+- [ ] Display not only the date, but also the exact time of when the user posted.
 
 ## The first step
 I'm taking this exercise as an opportunity to structure my PHP code a lot more clear.
@@ -45,3 +49,11 @@ But, it's a huge step forward from how it looked like before!
 Quite literally, since I'm sure I will be making **a lot** of forms in the future.
 For now, I'll try to read on as much as possible on how I can store user input on PHP.
 I'm still not sure how to let users their input be shown to other users, so figuring that out is a top priority.
+
+## When in doubt, write it out!
+The way I see this happening is:
+1. User inputs their information in the form
+2. User sends form data
+3. This form data needs to be transformed into an array/object
+4. User data goes through thr Post class, creating an object called userData
+5. PostLoader class will handle the getting, storing and posting of data
