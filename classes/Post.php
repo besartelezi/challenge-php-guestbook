@@ -4,21 +4,24 @@ declare(strict_types=1);
 class Post
 {
     private string $title;
-    private string $date;
     private string $content;
     private string $authorName;
+    private string $date;
 
-    public function __construct(string $title, string $date, string $content, string $authorName)
+
+    public function __construct(string $title, string $content, string $authorName ,string $date)
     {
         $this->title = $title;
-        $this->date = $date;
         $this->content = $content;
         $this->authorName = $authorName;
+        $this->date = $date;
     }
-
 }
 
-// if (isset($_POST))
-// {
-//    $userPost = new Post();
-// }
+print_r($_POST);
+echo "<br>";
+$userInput = new Post($_POST["title"], $_POST["content"], $_POST["authorname"], $_POST["date"]);
+echo "<br>";
+print_r($userInput);
+echo "<br>";
+print_r(json_encode($_POST));
