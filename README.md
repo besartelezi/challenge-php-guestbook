@@ -70,4 +70,4 @@ Then, the PostLoader stores this object, and is able to retrieve it again.
 
 So my current goal is, is for when I print_r($userInput), the object needs to appear.
 
-![some-text](images/patrick.gif);
+![some-text](images/patrick.gif)
