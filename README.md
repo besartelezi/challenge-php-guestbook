@@ -21,3 +21,8 @@ Everybody who visits the page can see the messages.
 - [ ] Profanity filter: at the top of your script create an array of "bad" words. If somebody tries to enter a message with those words, their messages gets rejected.
 - [ ] When the user enters uses a "smily" like ":-)", ";-)", ":-(" replace it with an image of such a smiley.
 - [ ] Have an input field where the user can enter how many message he wants to see displayed.
+
+## The first step
+For now, I'll try to read on as much as possible on how I can store user input on PHP.
+I'm still not sure how to let users their input be shown to other users, so figuring that out is a top priority.
+
