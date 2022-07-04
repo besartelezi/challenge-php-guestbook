@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+date_default_timezone_set('Europe/Brussels');
+
 //creating the new PostLoader object
 $postLoader = new PostLoader();
 // if the button has been pressed, then the savePost function will be used
@@ -8,6 +10,8 @@ if (isset($_POST['date']))
 {
     $postLoader->savePost();
 }
+
+
 
 ?>
 <!-- THE FORM -->
@@ -28,7 +32,7 @@ if (isset($_POST['date']))
         <input type="text" name="authorName">
     </label><br>
     <!-- When the user clicks on the button, then the current date will be added to the $_POST array -->
-    <button type="submit" value="<?php echo (date('d/m/Y')); ?>" name="date">Submit</button>
+    <button type="submit" value="<?php echo (date('d/m/Y H:i:s A')); ?>" name="date">Submit</button>
 </form>
 </body>
 
