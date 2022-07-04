@@ -86,7 +86,22 @@ What I did learn more about, was properly structuring my files.
 I didn't get any of the same errors I had in the exercise prior to this one.
 That's something the cool kids call a 'big W'.
 
+## Current Objectives
 Currently, there are two more things I want to do for this exercise:
--[ ] Add an user input field, where they can decide how many posts they'd like to see
--[ ] There's currently a bug, where if the user refreshes the page, it resubmits the user data.
+- [x] Add a user input field, where they can decide how many posts they'd like to see
+- [ ] There's currently a bug, where if the user refreshes the page, it resubmits the user data.
+    - [ ] The most obvious solution is to let the user go to another page once they've filled in the form
+    - [ ] And on that page, is where all the posts are visible.
+    - Downside to this solution is that I need to cut out a lot of code, paste it somewhere else and I will need to do a lot of restructuring.
+    I need a more time for this than what amount of time I have
+- [ ] Show the time of when the post has been sent by the user
 
+## Final thoughts
+Like I mentioned earlier, this exercise definitely helped me structure my code and files way better.
+It also helped me gain some insight on storing user data, and how forms work in PHP.
+I still do need to practice some more on this, since I still don't understand storing data at a level where I'm comfortable at.
+Like all programming and coding subjects, that is only something that I get better at the more I practice it.
+
+All in all, this was a great exercise that was very much needed.
+
+![thumbs-up](/images/thumbs-up.gif)
