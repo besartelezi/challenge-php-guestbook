@@ -86,4 +86,7 @@ What I did learn more about, was properly structuring my files.
 I didn't get any of the same errors I had in the exercise prior to this one.
 That's something the cool kids call a 'big W'.
 
+Currently, there are two more things I want to do for this exercise:
+-[ ] Add an user input field, where they can decide how many posts they'd like to see
+-[ ] There's currently a bug, where if the user refreshes the page, it resubmits the user data.
 
