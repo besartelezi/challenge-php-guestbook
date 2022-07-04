@@ -50,14 +50,16 @@ $yesyesWords = ['heck','hecking','i love you','jelly-o','o heavens','darn','good
 ?>
 <?php foreach(array_reverse($postsArray) as $value): ?>
     <?php $i++;
-    $content = $value['content'];
-    $filteredContent = str_replace($nonoWords, $yesyesWords, $content);
+    $filteredContent = str_replace($nonoWords, $yesyesWords, $value['content']);
+    $filteredTitle = str_replace($nonoWords, $yesyesWords, $value['title']);
+    $filteredAuthorName = str_replace($nonoWords, $yesyesWords, $value['authorName']);
+
     str_replace($textEmojis, $emojis ,$filteredContent);
     ?>
     <div class="card" style="background-color: lightblue; margin: 15px; padding 30px;">
         <div class="image"><img src="https://picsum.photos/70" alt="random image">
-            <div class="Title"><?= $value['title'] ?></div>
-            <div class="authorName"><?= $value['authorName'] ?></div>
+            <div class="Title"><?= str_replace($textEmojis, $emojis , $filteredTitle); ?></div>
+            <div class="authorName"><?= $filteredAuthorName ?></div>
             <div> <?= str_replace($textEmojis, $emojis ,$filteredContent); ?></div>
             <h6> <?= $value['date'] ?></h6>
         </div>
