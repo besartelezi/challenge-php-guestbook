@@ -29,6 +29,14 @@ if (isset($_POST['date']))
 </form>
 </body>
 
+<form method="post">
+    <label>How many posts would you like to see?
+        <input type="number" name="amountPosts">
+    </label>
+    <button type="submit">Submit</button>
+</form>
+
+
 
 <?php
 
@@ -47,6 +55,8 @@ $emojis = ['&#128522', '&#128522', '&#128543', '&#128543', '&#128516', '&#128516
 
 $nonoWords = ['fuck', 'fucking', 'fuckyou', 'shit','hell','damn','asshole','pussy','dipshit','fucker'];
 $yesyesWords = ['heck','hecking','i love you','jelly-o','o heavens','darn','good kid','brave soldier','dipper','hero'];
+
+$amountPosts = $_POST['amountPosts'] ?? 20;
 ?>
 <?php foreach(array_reverse($postsArray) as $value): ?>
     <?php $i++;
@@ -56,13 +66,15 @@ $yesyesWords = ['heck','hecking','i love you','jelly-o','o heavens','darn','good
 
     str_replace($textEmojis, $emojis ,$filteredContent);
     ?>
+
     <div class="card" style="background-color: lightblue; margin: 15px; padding 30px;">
         <div class="image"><img src="https://picsum.photos/70" alt="random image">
             <div class="Title"><?= str_replace($textEmojis, $emojis , $filteredTitle); ?></div>
-            <div class="authorName"><?= $filteredAuthorName ?></div>
             <div> <?= str_replace($textEmojis, $emojis ,$filteredContent); ?></div>
+            <div class="authorName" style="font-weight: bold"><?= $filteredAuthorName ?></div>
             <h6> <?= $value['date'] ?></h6>
         </div>
     </div>
-    <?php if ($i >= 20) break;
+
+    <?php if ($i >= $amountPosts) break;
 endforeach; ?>
