@@ -16,12 +16,27 @@ class Post
         $this->authorName = $authorName;
         $this->date = $date;
     }
+    public function getTitle (): string
+    {
+        return $this->title;
+    }
+    public function getContent () : string {
+        return $this->content;
+    }
+    public function getAuthorName () : string {
+        return $this->authorName;
+    }
+    public function getDate () : string {
+        return $this->date;
+    }
 }
 
-print_r($_POST);
-echo "<br>";
-$userInput = new Post($_POST["title"], $_POST["content"], $_POST["authorname"], $_POST["date"]);
-echo "<br>";
-print_r($userInput);
-echo "<br>";
-print_r(json_encode($_POST));
+
+
+//print_r($_POST);
+//echo "<br>";
+//$userInput = new Post($_POST["title"], $_POST["content"], $_POST["authorname"], $_POST["date"]);
+//echo "<br>";
+//print_r($userInput);
+//echo "<br>";
+//print_r(json_encode($_POST));
