@@ -6,20 +6,20 @@ Any visitor on the page can leave a message, that message is then saved and disp
 Everybody who visits the page can see the messages.
 
 ## Must-have features
-- [ ] Posts must have the following attributes:
-  - [ ] Title
-  - [ ] Date
-  - [ ] Content
-  - [ ] Author name
+- [x] Posts must have the following attributes:
+  - [x] Title
+  - [x] Date
+  - [x] Content
+  - [x] Author name
 
-- [ ] Use at least 2 classes: PostLoader & Post
-- [ ] The messages are sorted from new (top) to old (bottom).
-- [ ] Make sure the script can handle [site defacement attacks](https://en.wikipedia.org/wiki/Website_defacement): use [htmlspecialchars()](https://www.php.net/htmlspecialchars)
-- [ ] Only show the latest 20 posts.
+- [x] Use at least 2 classes: PostLoader & Post
+- [x] The messages are sorted from new (top) to old (bottom).
+- [x] Make sure the script can handle [site defacement attacks](https://en.wikipedia.org/wiki/Website_defacement): use [htmlspecialchars()](https://www.php.net/htmlspecialchars)
+- [x] Only show the latest 20 posts.
 
 ## Nice to have features
-- [ ] Profanity filter: at the top of your script create an array of "bad" words. If somebody tries to enter a message with those words, their messages gets rejected.
-- [ ] When the user enters uses a "smiley" like ":-)", ";-)", ":-(" replace it with an image of such a smiley.
+- [x] Profanity filter: at the top of your script create an array of "bad" words. If somebody tries to enter a message with those words, their messages gets rejected.
+- [x] When the user enters uses a "smiley" like ":-)", ";-)", ":-(" replace it with an image of such a smiley.
 - [ ] Have an input field where the user can enter how many message he wants to see displayed.
 
 ## Features of my own I'd like to add
@@ -71,3 +71,19 @@ Then, the PostLoader stores this object, and is able to retrieve it again.
 So my current goal is, is for when I print_r($userInput), the object needs to appear.
 
 ![some-text](images/patrick.gif)
+
+## Ready, Get(ter) Set(ter), GO!!
+I added getters to the Post class, so that I can access the private properties in the PostLoader class.
+Afterwards, I added two functions to the PostLoader class, one called savePost() and the other called getPost() (they're basically just a getter and a setter but spicier).
+I also had to make a txt file, where all the user input data could be stored.
+The hardest part about storing the information, was figuring out how to properly decode and encode the information.
+Storing the user data was easy enough without it, but that also means that a person could also easily access it.
+
+This assignment did teach me a lot about storing and accessing user information.
+I still don't understand it 100%, but I'm getting there.
+
+What I did learn more about, was properly structuring my files.
+I didn't get any of the same errors I had in the exercise prior to this one.
+That's something the cool kids call a 'big W'.
+
+
