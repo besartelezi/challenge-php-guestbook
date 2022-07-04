@@ -20,11 +20,11 @@ Everybody who visits the page can see the messages.
 ## Nice to have features
 - [x] Profanity filter: at the top of your script create an array of "bad" words. If somebody tries to enter a message with those words, their messages gets rejected.
 - [x] When the user enters uses a "smiley" like ":-)", ";-)", ":-(" replace it with an image of such a smiley.
-- [ ] Have an input field where the user can enter how many message he wants to see displayed.
+- [x] Have an input field where the user can enter how many message he wants to see displayed.
 
 ## Features of my own I'd like to add
 - [ ] Play an audio file of the viral clip 'watch yo profanity' when the user inputs a "bad" word.
-- [ ] Display not only the date, but also the exact time of when the user posted.
+- [x] Display not only the date, but also the exact time of when the user posted.
 
 ## The first step
 I'm taking this exercise as an opportunity to structure my PHP code a lot more clear.
@@ -94,7 +94,7 @@ Currently, there are two more things I want to do for this exercise:
     - [ ] And on that page, is where all the posts are visible.
     - Downside to this solution is that I need to cut out a lot of code, paste it somewhere else and I will need to do a lot of restructuring.
     I need a more time for this than what amount of time I have
-- [ ] Show the time of when the post has been sent by the user
+- [x] Show the time of when the post has been sent by the user
 
 ## Final thoughts
 Like I mentioned earlier, this exercise definitely helped me structure my code and files way better.
